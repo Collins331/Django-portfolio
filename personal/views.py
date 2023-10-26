@@ -9,3 +9,9 @@ def portfolio(request):
 
 def resume(request):
     return render(request, 'resume.html', {'navbar': 'resume'})
+
+def form(request):
+    return render(request, 'form.html', {'navbar': 'form'})
+
+def viewdata(request):
+    return render(request, 'viewdata.html', {'navbar': 'view'})
