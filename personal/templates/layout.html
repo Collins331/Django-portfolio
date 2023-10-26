@@ -12,9 +12,13 @@
     <title>Portfolio</title>
 </head>
 <body class="text-light bg-dark">
-    <a class="hom" href="{% url 'personal:home' %}">Home</a>
-    <a class="port" href="{% url 'personal:portfolio' %}">Portfolio</a>
-    <a class="res" href="{% url 'personal:resume' %}">Resume</a>
+<div class="arr">
+    <a class="{% if navbar == 'home' %} hom {% endif %}" href="{% url 'personal:home' %}">Home</a>
+    <a class="{% if navbar == 'portfolio' %} hom {% endif %}" href="{% url 'personal:portfolio' %}">Portfolio</a>
+    <a class="{% if navbar == 'resume' %} hom {% endif %}" href="{% url 'personal:resume' %}">Resume</a>
+</div>
+<br>
+<br>
 
     {% block body %}
 

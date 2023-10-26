@@ -1,3 +1,12 @@
+body a {
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.arr{
+    justify-content: space-evenly;
+    flex-direction: row;
+    display: flex;
+}
 .slider {
     width: 300px; /* Set your desired width */
     overflow: hidden;
@@ -13,13 +22,8 @@
     width: 100%;
     height: auto;
 }
-/*body {*/
-/*    color: deepskyblue;*/
-/*}*/
-
-a{
-    text-decoration: none;
-}
 .hom{
     color: #358000;
+    background-color: #EAFAF1;
+    border-radius: 20px;
 }
