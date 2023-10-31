@@ -6,3 +6,6 @@ class Students(models.Model):
      email = models.EmailField()
      age = models.IntegerField()
      image = models.ImageField(upload_to='images', default='profile.png')
+
+     def __str__(self):
+          return self.name
